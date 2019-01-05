@@ -1,4 +1,8 @@
 <?php
+/**
+ * Tests for perform unit testing on FlattenArray class
+ * @author Tareq Anwar <trqnwr@gmail.com>
+ */
 
 use PHPUnit\Framework\TestCase;
 
