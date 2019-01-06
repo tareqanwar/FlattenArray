@@ -23,4 +23,12 @@ class FlattenArrayTest extends TestCase
 
         $this->assertEquals($flatArray, [3,1,2,3,4,10,5]);
     }
+
+    public function testThatWeGetEmptyArrayWhenWePassEmptyArray()
+    {
+        $flattenArray = new FlattenArray;
+        $flatArray = $flattenArray->getFlatArray([]);
+
+        $this->assertEquals($flatArray, []);
+    }
 }
