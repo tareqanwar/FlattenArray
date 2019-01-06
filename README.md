@@ -1,4 +1,4 @@
-FlattenArray
+#FlattenArray
 
 Flattens an array of arbitrarily nested arrays into a flat array
 
