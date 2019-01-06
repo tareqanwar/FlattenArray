@@ -10,8 +10,17 @@ class FlattenArrayTest extends TestCase
 {
     public function testThatWeGetFlatArray()
     {
-        $flatArray = FlattenArray::getFlatArray([[1,2,[3]],4]);
+        $flattenArray = new FlattenArray;
+        $flatArray = $flattenArray->getFlatArray([[1,2,[3]],4]);
 
         $this->assertEquals($flatArray, [1,2,3,4]);
+    }
+
+    public function testAginThatWeGetFlatArray()
+    {
+        $flattenArray = new FlattenArray;
+        $flatArray = $flattenArray->getFlatArray([3,[1,2,[3]],4,[10,5]]);
+
+        $this->assertEquals($flatArray, [3,1,2,3,4,10,5]);
     }
 }
